@@ -2,8 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:portfolio/components/padding_text.dart';
 import 'package:portfolio/components/big_button.dart';
 import 'cert-viewer.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class AboutMe extends StatelessWidget {
+  void launchURL() async {
+    const url = 'https://github.com/rlertola?tab=repositories';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -11,7 +21,6 @@ class AboutMe extends StatelessWidget {
         title: Text('PORTFOLIO'),
       ),
       body: ListView(
-//        mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           PaddingText(
             padding: EdgeInsets.all(16.0),
@@ -42,17 +51,7 @@ class AboutMe extends StatelessWidget {
           ),
           BigButton(
             title: 'GitHub',
-            onPress: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => CertViewer(
-                        file: 'certificates/flutter-cert.png',
-                        text: 'Flutter',
-                      ),
-                ),
-              );
-            },
+            onPress: launchURL,
           ),
           BigButton(
             title: 'Resume',
