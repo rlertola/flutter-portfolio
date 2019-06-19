@@ -9,8 +9,8 @@ class Certificates extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('PORTFOLIO'),
-      ),
+//        title: Text('CERTIFICATES'),
+          ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -22,7 +22,7 @@ class Certificates extends StatelessWidget {
                 PaddingText(
                   padding: EdgeInsets.all(16.0),
                   text: 'Certificates',
-                  size: 65.0,
+                  size: 50.0,
                   family: 'Lobster',
                 ),
                 SizedBox(
@@ -35,7 +35,7 @@ class Certificates extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) => CertViewer(
-                              file: 'certificates/treehouse-cert.png',
+                              file: 'assets/treehouse-cert.png',
                               text: 'Treehouse',
                             ),
                       ),
@@ -49,7 +49,7 @@ class Certificates extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) => CertViewer(
-                              file: 'certificates/flutter-cert.png',
+                              file: 'assets/flutter-cert.png',
                               text: 'Flutter',
                             ),
                       ),
@@ -63,7 +63,7 @@ class Certificates extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) => CertViewer(
-                              file: 'certificates/WesBosReact-cert.png',
+                              file: 'assets/WesBosReact-cert.png',
                               text: 'Wes Bos React',
                             ),
                       ),

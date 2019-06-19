@@ -18,15 +18,17 @@ class AboutMe extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('PORTFOLIO'),
-      ),
+//        title: Text('ABOUT ME'),
+          ),
       body: ListView(
         children: <Widget>[
-          PaddingText(
-            padding: EdgeInsets.all(16.0),
-            text: 'About Me',
-            size: 65.0,
-            family: 'Lobster',
+          Center(
+            child: PaddingText(
+              padding: EdgeInsets.all(16.0),
+              text: 'About Me',
+              size: 50.0,
+              family: 'Lobster',
+            ),
           ),
           PaddingText(
             padding: EdgeInsets.all(20.0),
@@ -42,7 +44,7 @@ class AboutMe extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) => CertViewer(
-                        file: 'certificates/treehouse-cert.png',
+                        file: 'assets/treehouse-cert.png',
                         text: 'Treehouse',
                       ),
                 ),
@@ -60,7 +62,7 @@ class AboutMe extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) => CertViewer(
-                        file: 'certificates/Resume-RyanLertola.png',
+                        file: 'assets/Resume-RyanLertola.png',
                         text: 'Resume',
                       ),
                 ),

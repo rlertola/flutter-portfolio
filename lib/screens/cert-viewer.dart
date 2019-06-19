@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/components/padding_text.dart';
+import 'package:zoomable_image/zoomable_image.dart';
 import 'package:flutter_plugin_pdf_viewer/flutter_plugin_pdf_viewer.dart';
 
 //class CertViewer extends StatefulWidget {
@@ -65,23 +66,25 @@ class CertViewer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Portfolio'),
+        title: Text(text),
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          Image.asset(
-            file,
-          ),
-          Flexible(
-            child: PaddingText(
-              padding: EdgeInsets.all(8.0),
-              text: text,
-              size: 40.0,
-              family: 'Raleway',
-            ),
-          ),
-        ],
+      body: Container(
+        child: ZoomableImage(
+          AssetImage(file),
+          backgroundColor: Colors.grey[850],
+        ),
+//        mainAxisAlignment: MainAxisAlignment.center,
+//        children: <Widget>[
+//
+//          Flexible(
+//            child: PaddingText(
+//              padding: EdgeInsets.all(8.0),
+//              text: text,
+//              size: 32.0,
+//              family: 'Raleway',
+//            ),
+//          ),
+//        ],
       ),
     );
   }

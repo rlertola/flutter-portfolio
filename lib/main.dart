@@ -3,6 +3,7 @@ import 'package:portfolio/screens/welcome_screen.dart';
 import 'package:portfolio/screens/projects.dart';
 import 'package:portfolio/screens/certificates.dart';
 import 'package:portfolio/screens/about_me.dart';
+import 'screens/contact.dart';
 
 void main() => runApp(Portfolio());
 
@@ -18,7 +19,8 @@ class Portfolio extends StatelessWidget {
       routes: {
         '/projects': (context) => Projects(),
         '/certificates': (context) => Certificates(),
-        '/about_me': (context) => AboutMe()
+        '/about_me': (context) => AboutMe(),
+        '/contact': (context) => Contact(),
       },
       home: WelcomeScreen(),
     );

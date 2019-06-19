@@ -6,10 +6,8 @@ class Projects extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          'Portfolio',
-        ),
-      ),
+//        title: Text('PROJECTS'),
+          ),
       body: GridView.count(
         crossAxisCount: 2,
         children: List.generate(

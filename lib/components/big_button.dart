@@ -16,8 +16,8 @@ class BigButton extends StatelessWidget {
         borderRadius: BorderRadius.circular(20.0),
         child: MaterialButton(
           onPressed: onPress,
-          minWidth: 360.0,
-          height: 75.0,
+          minWidth: 340.0,
+          height: 65.0,
           child: Text(
             title,
             style: TextStyle(

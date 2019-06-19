@@ -14,30 +14,28 @@ class WelcomeScreen extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
           Column(
-            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               PaddingText(
                 padding: EdgeInsets.all(16.0),
                 text: 'Ryan Lertola',
-                size: 65.0,
+                size: 50.0,
                 family: 'Lobster',
               ),
               PaddingText(
                 padding: EdgeInsets.only(bottom: 4.0),
                 text: 'Fullstack Javascript Developer,',
-                size: 20.0,
+                size: 18.0,
                 family: 'Raleway',
               ),
               PaddingText(
                 padding: EdgeInsets.only(bottom: 16.0),
                 text: 'Dabbler in Flutter',
-                size: 20.0,
+                size: 18.0,
                 family: 'Raleway',
               ),
             ],
           ),
           Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               BigButton(
                 title: 'PROJECTS',
@@ -55,6 +53,12 @@ class WelcomeScreen extends StatelessWidget {
                 title: 'ABOUT ME',
                 onPress: () {
                   Navigator.pushNamed(context, '/about_me');
+                },
+              ),
+              BigButton(
+                title: 'CONTACT',
+                onPress: () {
+                  Navigator.pushNamed(context, '/contact');
                 },
               ),
             ],
