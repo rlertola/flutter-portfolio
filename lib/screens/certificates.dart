@@ -9,8 +9,8 @@ class Certificates extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-//        title: Text('CERTIFICATES'),
-          ),
+        title: Text('CERTIFICATES'),
+      ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.stretch,

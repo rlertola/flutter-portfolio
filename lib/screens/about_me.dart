@@ -18,8 +18,8 @@ class AboutMe extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-//        title: Text('ABOUT ME'),
-          ),
+        title: Text('ABOUT ME'),
+      ),
       body: ListView(
         children: <Widget>[
           Center(

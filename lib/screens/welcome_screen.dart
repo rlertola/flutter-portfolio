@@ -2,7 +2,12 @@ import 'package:flutter/material.dart';
 import '../components/big_button.dart';
 import 'package:portfolio/components/padding_text.dart';
 
-class WelcomeScreen extends StatelessWidget {
+class WelcomeScreen extends StatefulWidget {
+  @override
+  _WelcomeScreenState createState() => _WelcomeScreenState();
+}
+
+class _WelcomeScreenState extends State<WelcomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

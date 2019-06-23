@@ -6,8 +6,8 @@ class Contact extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-//        title: Text('CONTACT'),
-          ),
+        title: Text('CONTACT'),
+      ),
       body: SafeArea(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -23,17 +23,29 @@ class Contact extends StatelessWidget {
               size: 50.0,
               family: 'Lobster',
             ),
+            PaddingText(
+              padding: EdgeInsets.only(bottom: 4.0),
+              text: 'Fullstack Javascript Developer,',
+              size: 18.0,
+              family: 'Raleway',
+            ),
+            PaddingText(
+              padding: EdgeInsets.only(bottom: 16.0),
+              text: 'Dabbler in Flutter',
+              size: 18.0,
+              family: 'Raleway',
+            ),
             SizedBox(
               height: 20.0,
               width: 150.0,
               child: Divider(
-                color: Colors.teal.shade100,
+                color: Colors.white,
               ),
             ),
             Card(
               margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
               child: Padding(
-                padding: EdgeInsets.all(15.0),
+                padding: EdgeInsets.all(8.0),
                 child: ListTile(
                   leading: Icon(
                     Icons.phone,
@@ -44,7 +56,7 @@ class Contact extends StatelessWidget {
                     style: TextStyle(
                       color: Colors.white,
                       fontFamily: 'SourceSansPro',
-                      fontSize: 24.0,
+                      fontSize: 20.0,
                     ),
                   ),
                 ),
@@ -53,7 +65,7 @@ class Contact extends StatelessWidget {
             Card(
               margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
               child: Padding(
-                padding: EdgeInsets.all(15.0),
+                padding: EdgeInsets.all(8.0),
                 child: ListTile(
                   leading: Icon(
                     Icons.email,
@@ -64,7 +76,7 @@ class Contact extends StatelessWidget {
                     style: TextStyle(
                       color: Colors.white,
                       fontFamily: 'SourceSansPro',
-                      fontSize: 24.0,
+                      fontSize: 20.0,
                     ),
                   ),
                 ),
