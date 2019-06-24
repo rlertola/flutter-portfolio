@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/components/padding_text.dart';
-import 'package:portfolio/projects-list.dart';
+import 'package:portfolio/projects_list.dart';
 import 'project-page.dart';
 
 class Projects extends StatelessWidget {
@@ -33,10 +32,11 @@ class Projects extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => Project(),
+                        builder: (context) => Project(
+                              index: index,
+                            ),
                       ),
                     );
-                    print(projects[0]['project_name']);
                   },
                   child: Card(
                     borderOnForeground: true,
@@ -48,10 +48,10 @@ class Projects extends StatelessWidget {
                           child: Column(
                             children: <Widget>[
                               Image.asset(
-                                'project_images/proj20.png',
+                                projects[index]['image_urls'][0],
                               ),
                               Text(
-                                'Dev Course Library',
+                                projects[index]['project_name'],
                                 style: TextStyle(
                                     fontSize: 24.0,
                                     color: Colors.white,
@@ -65,7 +65,7 @@ class Projects extends StatelessWidget {
                   ),
                 );
               },
-              childCount: 10,
+              childCount: projects.length,
             ),
           )
         ],

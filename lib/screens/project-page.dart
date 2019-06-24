@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/projects-list.dart';
+import 'package:portfolio/projects_list.dart';
 import 'package:portfolio/components/big_button.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class Project extends StatelessWidget {
+  Project({this.index});
+  final int index;
+
   void launchURL(url) async {
     if (await canLaunch(url)) {
       await launch(url);
@@ -14,9 +17,26 @@ class Project extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    List<String> images = projects[index]['image_urls'];
+    images.removeAt(0);
+
+    List<Padding> paddingWidgets = images
+        .map((image) => Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Image.asset(image),
+            ))
+        .toList();
+
+    // List<Padding> paddingWidgets = images.map((image) {
+    //   return Padding(
+    //     padding: EdgeInsets.all(8.0),
+    //     child: Image.asset(image),
+    //   );
+    // }).toList();
+
     return Scaffold(
       appBar: AppBar(
-        title: Text(projects[0]['project_name']),
+        title: Text(projects[index]['project_name']),
       ),
       body: Padding(
         padding: const EdgeInsets.all(12.0),
@@ -25,8 +45,7 @@ class Project extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: Text(
-                projects[0]['description'],
-                textAlign: TextAlign.justify,
+                projects[index]['description'],
                 style: TextStyle(
                   fontSize: 16.0,
                 ),
@@ -35,13 +54,13 @@ class Project extends StatelessWidget {
             BigButton(
               title: 'Live Demo',
               onPress: () {
-                launchURL(projects[0]['live_link']);
+                launchURL(projects[index]['live_link']);
               },
             ),
             BigButton(
               title: 'GitHub Repo',
               onPress: () {
-                launchURL(projects[0]['github_link']);
+                launchURL(projects[index]['github_link']);
               },
             ),
             SizedBox(
@@ -51,25 +70,14 @@ class Project extends StatelessWidget {
                 color: Colors.white,
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Image.asset(projects[0]['image_urls'][0]),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Image.asset(projects[0]['image_urls'][1]),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Image.asset(projects[0]['image_urls'][2]),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Image.asset(projects[0]['image_urls'][3]),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Image.asset(projects[0]['image_urls'][4]),
+            Column(
+              children: paddingWidgets,
+              // children: images
+              //     .map((image) => Padding(
+              //           padding: const EdgeInsets.all(8.0),
+              //           child: Image.asset(image),
+              //         ))
+              //     .toList(),
             ),
           ],
         ),
