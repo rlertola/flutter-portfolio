@@ -3,6 +3,7 @@ import 'package:portfolio/components/padding_text.dart';
 import 'package:portfolio/components/big_button.dart';
 import 'cert-viewer.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'skills.dart';
 
 class AboutMe extends StatelessWidget {
   void launchURL() async {
@@ -51,10 +52,7 @@ class AboutMe extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => CertViewer(
-                              file: 'assets/treehouse-cert.png',
-                              text: 'Treehouse',
-                            ),
+                        builder: (context) => Skills(),
                       ),
                     );
                   },

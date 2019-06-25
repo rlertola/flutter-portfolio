@@ -6,7 +6,10 @@ class Contact extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('CONTACT'),
+        title: Text(
+          'CONTACT',
+          style: TextStyle(fontFamily: 'Raleway'),
+        ),
       ),
       body: SafeArea(
         child: Column(
