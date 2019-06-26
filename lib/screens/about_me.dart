@@ -4,6 +4,7 @@ import 'package:portfolio/components/big_button.dart';
 import 'cert-viewer.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'skills.dart';
+import 'package:portfolio/resources/constants.dart';
 
 class AboutMe extends StatelessWidget {
   void launchURL() async {
@@ -41,8 +42,7 @@ class AboutMe extends StatelessWidget {
               [
                 PaddingText(
                   padding: EdgeInsets.all(20.0),
-                  text:
-                      'I am an aspiring fullstack JavaScript developer who recently completed the TreeHouse Techdegree program with a primary focus on JavaScript, Node, React, Express and Mongo. I have also completed a Flutter Development course. Please check out my projects and certificates.',
+                  text: kAboutMeDescription,
                   size: 20.0,
                   family: 'Raleway',
                 ),
@@ -68,7 +68,8 @@ class AboutMe extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) => CertViewer(
-                              file: 'assets/Resume-RyanLertola.png',
+                              file:
+                                  'assets/certificates/Resume-RyanLertola.png',
                               text: 'Resume',
                             ),
                       ),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'cert-viewer.dart';
-import 'package:portfolio/certificates_list.dart';
+import 'package:portfolio/resources/certificates_list.dart';
 
 class Certificates extends StatelessWidget {
   @override

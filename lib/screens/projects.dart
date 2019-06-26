@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/projects_list.dart';
+import 'package:portfolio/resources/projects_list.dart';
 import 'project-page.dart';
 
 class Projects extends StatelessWidget {

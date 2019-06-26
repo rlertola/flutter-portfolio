@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/certificates_list.dart';
+import 'package:portfolio/resources/skills_list.dart';
 
 class Skills extends StatelessWidget {
   @override

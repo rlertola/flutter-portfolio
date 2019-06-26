@@ -9,13 +9,13 @@ List projects = [
     "github_link":
         "https://github.com/rlertola/Full-Stack-App-with-React-and-a-REST-API",
     "image_urls": [
-      "project_images/proj71.png",
-      "project_images/proj70.png",
-      "project_images/proj76.png",
-      "project_images/proj72.png",
-      "project_images/proj73.png",
-      "project_images/proj74.png",
-      "project_images/proj75.png"
+      "assets/project_images/proj71.png",
+      "assets/project_images/proj70.png",
+      "assets/project_images/proj76.png",
+      "assets/project_images/proj72.png",
+      "assets/project_images/proj73.png",
+      "assets/project_images/proj74.png",
+      "assets/project_images/proj75.png"
     ]
   },
   {
@@ -27,11 +27,11 @@ List projects = [
     "live_link": "https://rlertola.github.io/react-gallery-app/#/",
     "github_link": "https://github.com/rlertola/react-gallery-app",
     "image_urls": [
-      "project_images/proj60projPage.png",
-      "project_images/proj60.png",
-      "project_images/proj61.png",
-      "project_images/proj62.png",
-      "project_images/proj63.png"
+      "assets/project_images/proj60projPage.png",
+      "assets/project_images/proj60.png",
+      "assets/project_images/proj61.png",
+      "assets/project_images/proj62.png",
+      "assets/project_images/proj63.png"
     ]
   },
   {
@@ -43,11 +43,11 @@ List projects = [
     "live_link": "https://rlertola.github.io/public_api_request-v1/",
     "github_link": "https://github.com/rlertola/public_api_request-v1",
     "image_urls": [
-      "project_images/proj50projPage.png",
-      "project_images/proj50.png",
-      "project_images/proj51.png",
-      "project_images/proj52.png",
-      "project_images/proj53.png"
+      "assets/project_images/proj50projPage.png",
+      "assets/project_images/proj50.png",
+      "assets/project_images/proj51.png",
+      "assets/project_images/proj52.png",
+      "assets/project_images/proj53.png"
     ]
   },
   {
@@ -59,11 +59,11 @@ List projects = [
     "live_link": "https://rlertola.github.io/oop_game-v2/",
     "github_link": "https://github.com/rlertola/oop_game-v2",
     "image_urls": [
-      "project_images/proj40projPage.png",
-      "project_images/proj40.png",
-      "project_images/proj41.png",
-      "project_images/proj43.png",
-      "project_images/proj42.png"
+      "assets/project_images/proj40projPage.png",
+      "assets/project_images/proj40.png",
+      "assets/project_images/proj41.png",
+      "assets/project_images/proj43.png",
+      "assets/project_images/proj42.png"
     ]
   },
   {
@@ -75,11 +75,11 @@ List projects = [
     "live_link": "https://rlertola.github.io/interactive-form-v1/",
     "github_link": "https://github.com/rlertola/interactive-form-v1",
     "image_urls": [
-      "project_images/proj30projPage.png",
-      "project_images/proj30.png",
-      "project_images/proj31.png",
-      "project_images/proj32.png",
-      "project_images/proj33.png"
+      "assets/project_images/proj30projPage.png",
+      "assets/project_images/proj30.png",
+      "assets/project_images/proj31.png",
+      "assets/project_images/proj32.png",
+      "assets/project_images/proj33.png"
     ]
   },
   {
@@ -92,10 +92,10 @@ List projects = [
     "github_link":
         "https://github.com/rlertola/list_pagination_and_filtering-v1/",
     "image_urls": [
-      "project_images/proj20projPage.png",
-      "project_images/proj20.png",
-      "project_images/proj21.png",
-      "project_images/proj22.png"
+      "assets/project_images/proj20projPage.png",
+      "assets/project_images/proj20.png",
+      "assets/project_images/proj21.png",
+      "assets/project_images/proj22.png"
     ]
   },
   {
@@ -107,10 +107,10 @@ List projects = [
     "live_link": "https://rlertola.github.io/a_random_quote_generator-v1/",
     "github_link": "https://github.com/rlertola/a_random_quote_generator-v1",
     "image_urls": [
-      "project_images/proj10.png",
-      "project_images/proj10.png",
-      "project_images/proj12.png",
-      "project_images/proj14.png"
+      "assets/project_images/proj10.png",
+      "assets/project_images/proj10.png",
+      "assets/project_images/proj12.png",
+      "assets/project_images/proj14.png"
     ]
   }
 ];

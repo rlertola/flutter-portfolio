@@ -16,7 +16,7 @@ class Contact extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             CircleAvatar(
-              backgroundImage: AssetImage('assets/me.jpg'),
+              backgroundImage: AssetImage('assets/certificates/me.jpg'),
               radius: 50,
               backgroundColor: Colors.red,
             ),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/projects_list.dart';
+import 'package:portfolio/resources/projects_list.dart';
 import 'package:portfolio/components/big_button.dart';
 import 'package:url_launcher/url_launcher.dart';
 
