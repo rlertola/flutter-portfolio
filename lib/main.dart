@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/screens/welcome_screen.dart';
+import 'screens/contact.dart';
+import 'package:portfolio/screens/about_me.dart';
 import 'package:portfolio/screens/projects.dart';
 import 'package:portfolio/screens/certificates.dart';
-import 'package:portfolio/screens/about_me.dart';
-import 'screens/contact.dart';
-import 'screens/welcome_screen.dart';
 
 void main() => runApp(Portfolio());
 
@@ -22,7 +20,6 @@ class PortfolioState extends State<Portfolio> {
     AboutMe(),
     Projects(),
     Certificates(),
-    WelcomeScreen(),
   ];
 
   @override
@@ -31,9 +28,6 @@ class PortfolioState extends State<Portfolio> {
       title: 'My Portfolio',
       theme: ThemeData.dark(),
       home: Scaffold(
-//        appBar: AppBar(
-//          title: Text('PORTFOLIO'),
-//        ),
         body: _pageOptions[selectedIndex],
         bottomNavigationBar: BottomNavigationBar(
           type: BottomNavigationBarType.fixed,
@@ -70,19 +64,3 @@ class PortfolioState extends State<Portfolio> {
     );
   }
 }
-
-//
-//Widget build(BuildContext context) {
-//  return MaterialApp(
-//    theme: ThemeData.dark(),
-//    title: 'My Portfolio',
-//    initialRoute: '/',
-//    routes: {
-//      '/projects': (context) => Projects(),
-//      '/certificates': (context) => Certificates(),
-//      '/about_me': (context) => AboutMe(),
-//      '/contact': (context) => Contact(),
-//    },
-//    home: WelcomeScreen(),
-//  );
-//}

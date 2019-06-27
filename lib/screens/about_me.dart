@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/components/padding_text.dart';
 import 'package:portfolio/components/big_button.dart';
-import 'cert-viewer.dart';
-import 'package:url_launcher/url_launcher.dart';
-import 'skills.dart';
 import 'package:portfolio/resources/constants.dart';
+import 'package:portfolio/components/sliver_bar.dart';
+import 'cert-viewer.dart';
+import 'skills.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class AboutMe extends StatelessWidget {
+  // url_launcher function.
   void launchURL() async {
-    const url = 'https://github.com/rlertola?tab=repositories';
+    const url = kGitHubUrl;
     if (await canLaunch(url)) {
       await launch(url);
     } else {
@@ -21,21 +23,8 @@ class AboutMe extends StatelessWidget {
     return Scaffold(
       body: CustomScrollView(
         slivers: <Widget>[
-          SliverAppBar(
-            expandedHeight: 200.0,
-            pinned: true,
-            flexibleSpace: FlexibleSpaceBar(
-              background: Container(
-                color: Colors.black54,
-              ),
-              title: Text(
-                'About Me',
-                style: TextStyle(
-                  fontFamily: 'Lobster',
-                  fontSize: 32.0,
-                ),
-              ),
-            ),
+          SliverBar(
+            titleText: 'About Me',
           ),
           SliverList(
             delegate: SliverChildListDelegate(

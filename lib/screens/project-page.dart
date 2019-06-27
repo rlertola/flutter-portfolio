@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/resources/projects_list.dart';
 import 'package:portfolio/components/big_button.dart';
+import 'package:portfolio/resources/projects_list.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class Project extends StatelessWidget {
@@ -20,19 +20,12 @@ class Project extends StatelessWidget {
     List<String> images = projects[index]['image_urls'];
     images.removeAt(0);
 
-    List<Padding> paddingWidgets = images
-        .map((image) => Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Image.asset(image),
-            ))
-        .toList();
-
-    // List<Padding> paddingWidgets = images.map((image) {
-    //   return Padding(
-    //     padding: EdgeInsets.all(8.0),
-    //     child: Image.asset(image),
-    //   );
-    // }).toList();
+    List<Padding> paddingWidgets = images.map((image) {
+      return Padding(
+        padding: EdgeInsets.all(8.0),
+        child: Image.asset(image),
+      );
+    }).toList();
 
     return Scaffold(
       appBar: AppBar(
@@ -72,12 +65,6 @@ class Project extends StatelessWidget {
             ),
             Column(
               children: paddingWidgets,
-              // children: images
-              //     .map((image) => Padding(
-              //           padding: const EdgeInsets.all(8.0),
-              //           child: Image.asset(image),
-              //         ))
-              //     .toList(),
             ),
           ],
         ),

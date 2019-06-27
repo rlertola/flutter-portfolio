@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/components/padding_text.dart';
+import 'package:portfolio/resources/constants.dart';
 
 class Contact extends StatelessWidget {
   @override
@@ -16,7 +17,7 @@ class Contact extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             CircleAvatar(
-              backgroundImage: AssetImage('assets/certificates/me.jpg'),
+              backgroundImage: AssetImage(kAvatar),
               radius: 50,
               backgroundColor: Colors.red,
             ),
@@ -28,13 +29,13 @@ class Contact extends StatelessWidget {
             ),
             PaddingText(
               padding: EdgeInsets.only(bottom: 4.0),
-              text: 'Fullstack Javascript Developer,',
+              text: kMainDescription,
               size: 18.0,
               family: 'Raleway',
             ),
             PaddingText(
               padding: EdgeInsets.only(bottom: 16.0),
-              text: 'Dabbler in Flutter',
+              text: kSecondaryDescription,
               size: 18.0,
               family: 'Raleway',
             ),
@@ -55,7 +56,7 @@ class Contact extends StatelessWidget {
                     color: Colors.white,
                   ),
                   title: Text(
-                    '123-456-7890',
+                    kPhoneNumber,
                     style: TextStyle(
                       color: Colors.white,
                       fontFamily: 'SourceSansPro',
@@ -75,7 +76,7 @@ class Contact extends StatelessWidget {
                     color: Colors.white,
                   ),
                   title: Text(
-                    'rlertola@gmail.com',
+                    kEmailAddress,
                     style: TextStyle(
                       color: Colors.white,
                       fontFamily: 'SourceSansPro',

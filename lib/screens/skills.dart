@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/components/sliver_bar.dart';
 import 'package:portfolio/resources/skills_list.dart';
 
 class Skills extends StatelessWidget {
@@ -8,21 +9,8 @@ class Skills extends StatelessWidget {
       body: SafeArea(
         child: CustomScrollView(
           slivers: <Widget>[
-            SliverAppBar(
-              expandedHeight: 200.0,
-              pinned: true,
-              flexibleSpace: FlexibleSpaceBar(
-                background: Container(
-                  color: Colors.black54,
-                ),
-                title: Text(
-                  'Skills',
-                  style: TextStyle(
-                    fontFamily: 'Lobster',
-                    fontSize: 32.0,
-                  ),
-                ),
-              ),
+            SliverBar(
+              titleText: 'Skills',
             ),
             SliverGrid(
               gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
