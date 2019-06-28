@@ -20,48 +20,10 @@ class Projects extends StatelessWidget {
                   routeTo: Project(
                     index: index,
                   ),
-                  imagePath: projects[index]['image_urls'][0],
+                  imagePath: projects[index]['main_image'],
                   titleText: projects[index]['project_name'],
                   context: context,
                 );
-
-                // GestureDetector(
-                //   onTap: () {
-                //     Navigator.push(
-                //       context,
-                //       MaterialPageRoute(
-                //         builder: (context) => Project(
-                //               index: index,
-                //             ),
-                //       ),
-                //     );
-                //   },
-                //   child: Card(
-                //     borderOnForeground: true,
-                //     elevation: 20.0,
-                //     child: Column(
-                //       children: <Widget>[
-                //         Container(
-                //           padding: EdgeInsets.all(12.0),
-                //           child: Column(
-                //             children: <Widget>[
-                //               Image.asset(
-                //                 projects[index]['image_urls'][0],
-                //               ),
-                //               Text(
-                //                 projects[index]['project_name'],
-                //                 style: TextStyle(
-                //                     fontSize: 24.0,
-                //                     color: Colors.white,
-                //                     fontFamily: 'Raleway'),
-                //               ),
-                //             ],
-                //           ),
-                //         ),
-                //       ],
-                //     ),
-                //   ),
-                // );
               },
               childCount: projects.length,
             ),

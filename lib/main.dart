@@ -37,15 +37,15 @@ class PortfolioState extends State<Portfolio> {
               title: Text('Contact'),
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.account_box),
+              icon: Icon(Icons.face),
               title: Text('About Me'),
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.developer_mode),
+              icon: Icon(Icons.code),
               title: Text('Projects'),
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.check_circle),
+              icon: Icon(Icons.check_circle_outline),
               title: Text('Certificates'),
             ),
           ],

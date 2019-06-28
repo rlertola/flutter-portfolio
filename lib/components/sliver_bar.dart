@@ -17,7 +17,8 @@ class SliverBar extends StatelessWidget {
         title: Text(
           titleText,
           style: TextStyle(
-            fontFamily: 'Lobster',
+            color: Colors.grey,
+            fontFamily: 'Raleway',
             fontSize: 32.0,
           ),
         ),

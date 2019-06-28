@@ -18,7 +18,6 @@ class Project extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List<String> images = projects[index]['image_urls'];
-    images.removeAt(0);
 
     List<Padding> paddingWidgets = images.map((image) {
       return Padding(

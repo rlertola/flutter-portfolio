@@ -3,18 +3,17 @@ import 'package:portfolio/components/padding_text.dart';
 import 'package:portfolio/components/big_button.dart';
 import 'package:portfolio/resources/constants.dart';
 import 'package:portfolio/components/sliver_bar.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'cert-viewer.dart';
 import 'skills.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class AboutMe extends StatelessWidget {
-  // url_launcher function.
-  void launchURL() async {
-    const url = kGitHubUrl;
-    if (await canLaunch(url)) {
-      await launch(url);
+  // url_launcher function for github link.
+  void launchGitHub() async {
+    if (await canLaunch(kGitHubUrl)) {
+      await launch(kGitHubUrl);
     } else {
-      throw 'Could not launch $url';
+      throw 'Could not launch $kGitHubUrl';
     }
   }
 
@@ -48,7 +47,7 @@ class AboutMe extends StatelessWidget {
                 ),
                 BigButton(
                   title: 'GitHub',
-                  onPress: launchURL,
+                  onPress: launchGitHub,
                 ),
                 BigButton(
                   title: 'Resume',
@@ -57,8 +56,7 @@ class AboutMe extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) => CertViewer(
-                              file:
-                                  'assets/certificates/Resume-RyanLertola.png',
+                              file: kResume,
                               text: 'Resume',
                             ),
                       ),

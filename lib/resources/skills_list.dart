@@ -56,7 +56,7 @@ List skills = [
     'id': 7,
     'title': 'Express.js',
     'logos': [
-      'assets/kills_icons/express76.png',
+      'assets/skills_icons/express76.png',
       'assets/skills_icons/express80.png'
     ]
   },
