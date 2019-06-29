@@ -35,7 +35,7 @@ class SliverCard extends StatelessWidget {
                     titleText,
                     style: TextStyle(
                         fontSize: 24.0,
-                        color: Colors.white,
+                        color: Colors.grey,
                         fontFamily: 'Raleway'),
                   ),
                 ],

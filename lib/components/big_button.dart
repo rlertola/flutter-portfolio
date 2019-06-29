@@ -21,7 +21,7 @@ class BigButton extends StatelessWidget {
           child: Text(
             title,
             style: TextStyle(
-              color: Colors.black54,
+              color: Color(0xFFb2ebf9),
               fontSize: 32.0,
               fontFamily: 'Raleway',
             ),

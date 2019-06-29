@@ -22,11 +22,14 @@ class Skills extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Image.asset(
-                        skills[index]['logos'][1],
+                        skills[index]['logo'],
                       ),
                       Text(
                         skills[index]['title'],
-                        style: TextStyle(color: Colors.white),
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontFamily: 'Raleway',
+                        ),
                       ),
                     ],
                   );

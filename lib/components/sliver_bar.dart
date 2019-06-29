@@ -12,12 +12,12 @@ class SliverBar extends StatelessWidget {
       pinned: true,
       flexibleSpace: FlexibleSpaceBar(
         background: Container(
-          color: Colors.black54,
+          color: Colors.grey[900],
         ),
         title: Text(
           titleText,
           style: TextStyle(
-            color: Colors.grey,
+            color: Color(0xFFb2ebf9),
             fontFamily: 'Raleway',
             fontSize: 32.0,
           ),

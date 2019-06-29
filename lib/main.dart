@@ -33,8 +33,8 @@ class PortfolioState extends State<Portfolio> {
           type: BottomNavigationBarType.fixed,
           items: <BottomNavigationBarItem>[
             BottomNavigationBarItem(
-              icon: Icon(Icons.phone),
-              title: Text('Contact'),
+              icon: Icon(Icons.home),
+              title: Text('Home'),
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.face),
@@ -52,8 +52,8 @@ class PortfolioState extends State<Portfolio> {
           currentIndex: selectedIndex,
           fixedColor: Colors.white,
           backgroundColor: Colors.black54,
-//          selectedItemColor: Colors.white,
-//          unselectedItemColor: Colors.grey[575],
+          //   selectedItemColor: Color(0xFFb2ebf9),
+          //  unselectedItemColor: Colors.grey[575],
           onTap: (int index) {
             setState(() {
               selectedIndex = index;

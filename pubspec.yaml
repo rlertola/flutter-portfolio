@@ -24,16 +24,19 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
+    - assets/
     - assets/certificates/
     - assets/project_images/
     - assets/skills_icons/
 
   fonts:
-    - family: Lobster
-      fonts:
-        - asset: fonts/Lobster-Regular.ttf
     - family: Raleway
       fonts:
+        - asset: fonts/Raleway-Regular.ttf
+        - asset: fonts/Raleway-Light.ttf
         - asset: fonts/Raleway-Medium.ttf
+    - family: Jura
+      fonts:
+        - asset: fonts/Jura/Jura-Regular.ttf
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

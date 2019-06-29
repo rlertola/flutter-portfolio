@@ -18,13 +18,13 @@ class ContactCard extends StatelessWidget {
           child: ListTile(
             leading: Icon(
               icon,
-              color: Colors.white,
+              color: Color(0xFFb2ebf9),
             ),
             title: Text(
               titleText,
               style: TextStyle(
-                color: Colors.white,
-                fontFamily: 'SourceSansPro',
+                color: Color(0xFFb2ebf9),
+                fontFamily: 'Jura',
                 fontSize: 20.0,
               ),
             ),

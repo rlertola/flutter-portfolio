@@ -33,6 +33,7 @@ class AboutMe extends StatelessWidget {
                   text: kAboutMeDescription,
                   size: 20.0,
                   family: 'Raleway',
+                  color: Colors.white,
                 ),
                 BigButton(
                   title: 'Skills',

@@ -28,7 +28,13 @@ class Project extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(projects[index]['project_name']),
+        title: Text(
+          projects[index]['project_name'],
+          style: TextStyle(
+            color: Colors.grey,
+            fontFamily: 'Raleway',
+          ),
+        ),
       ),
       body: Padding(
         padding: const EdgeInsets.all(12.0),
@@ -40,6 +46,8 @@ class Project extends StatelessWidget {
                 projects[index]['description'],
                 style: TextStyle(
                   fontSize: 16.0,
+                  color: Colors.white,
+                  fontFamily: 'Raleway',
                 ),
               ),
             ),

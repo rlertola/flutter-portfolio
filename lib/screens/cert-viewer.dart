@@ -11,7 +11,13 @@ class CertViewer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(text),
+        title: Text(
+          text,
+          style: TextStyle(
+            fontFamily: 'Raleway',
+            color: Colors.grey,
+          ),
+        ),
       ),
       body: Container(
         child: ZoomableImage(
