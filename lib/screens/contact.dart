@@ -7,25 +7,17 @@ import 'package:url_launcher/url_launcher.dart';
 class Contact extends StatelessWidget {
   // url_launcher function for phone and email.
   void launchURL(url) async {
-    if (await canLaunch(url)) {
-      await launch(url);
+    String uri = Uri.encodeFull(url);
+    if (await canLaunch(uri)) {
+      await launch(uri);
     } else {
-      throw 'Could not launch $url';
+      throw 'Could not launch $uri';
     }
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   title: Text(
-      //     'Contact',
-      //     style: TextStyle(
-      //       fontFamily: 'Raleway',
-      //       color: Colors.grey,
-      //     ),
-      //   ),
-      // ),
       body: SafeArea(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

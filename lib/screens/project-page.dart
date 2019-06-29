@@ -7,6 +7,7 @@ class Project extends StatelessWidget {
   Project({this.index});
   final int index;
 
+  // Launches
   void launchURL(url) async {
     if (await canLaunch(url)) {
       await launch(url);
