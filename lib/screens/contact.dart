@@ -34,6 +34,7 @@ class Contact extends StatelessWidget {
               size: 45.0,
               family: 'Raleway',
               color: Color(0xFFb2ebf9),
+              weight: FontWeight.w100,
             ),
             PaddingText(
               padding: EdgeInsets.only(bottom: 4.0),

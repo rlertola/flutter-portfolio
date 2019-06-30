@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class SliverCard extends StatelessWidget {
@@ -24,22 +25,25 @@ class SliverCard extends StatelessWidget {
         elevation: 20.0,
         child: Column(
           children: <Widget>[
-            Container(
-              padding: EdgeInsets.all(12.0),
-              child: Column(
-                children: <Widget>[
-                  Image.asset(
+            Column(
+              children: <Widget>[
+                Container(
+                  padding: EdgeInsets.all(10.0),
+                  child: Image.asset(
                     imagePath,
                   ),
-                  Text(
+                ),
+                Container(
+                  padding: EdgeInsets.only(bottom: 10.0),
+                  child: Text(
                     titleText,
                     style: TextStyle(
-                        fontSize: 24.0,
+                        fontSize: 20.0,
                         color: Colors.grey,
                         fontFamily: 'Raleway'),
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
           ],
         ),
