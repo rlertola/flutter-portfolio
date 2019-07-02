@@ -25,6 +25,7 @@ class PortfolioState extends State<Portfolio> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'My Portfolio',
       theme: ThemeData.dark(),
       home: Scaffold(
@@ -34,19 +35,39 @@ class PortfolioState extends State<Portfolio> {
           items: <BottomNavigationBarItem>[
             BottomNavigationBarItem(
               icon: Icon(Icons.home),
-              title: Text('Home'),
+              title: Text(
+                'Home',
+                style: TextStyle(
+                  fontFamily: 'Raleway',
+                ),
+              ),
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.face),
-              title: Text('About Me'),
+              title: Text(
+                'About Me',
+                style: TextStyle(
+                  fontFamily: 'Raleway',
+                ),
+              ),
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.code),
-              title: Text('Projects'),
+              title: Text(
+                'Projects',
+                style: TextStyle(
+                  fontFamily: 'Raleway',
+                ),
+              ),
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.check_circle_outline),
-              title: Text('Certificates'),
+              title: Text(
+                'Certificates',
+                style: TextStyle(
+                  fontFamily: 'Raleway',
+                ),
+              ),
             ),
           ],
           currentIndex: selectedIndex,
