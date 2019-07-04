@@ -15,29 +15,14 @@ class SliverBar extends StatelessWidget {
           decoration: BoxDecoration(
             gradient: LinearGradient(
               tileMode: TileMode.mirror,
-              // begin: Alignment.topLeft,
-              // end: Alignment.bottomCenter,
               begin: Alignment.topRight,
               end: Alignment.bottomCenter,
               colors: [
-                // Color(0xFFb2ebf9),
                 Color(0xFF91b0b7),
-                // Colors.grey[500],
                 Colors.black12,
               ],
             ),
-            // gradient: RadialGradient(
-            //   center: Alignment.topRight,
-            //   radius: 1.7,
-            //   colors: [
-            //     // Color(0xFFb2ebf9),
-            //     Color(0xFF91b0b7),
-            //     // Colors.grey[500],
-            //     Colors.black54,
-            //   ],
-            // ),
           ),
-          // color: Colors.grey[900],
         ),
         title: Text(
           titleText,
