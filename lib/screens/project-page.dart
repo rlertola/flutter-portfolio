@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:portfolio/components/big_button.dart';
 import 'package:portfolio/resources/projects_list.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class Project extends StatelessWidget {
   Project({this.index});

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'screens/contact.dart';
 import 'package:portfolio/screens/about_me.dart';
 import 'package:portfolio/screens/projects.dart';
 import 'package:portfolio/screens/certificates.dart';
+
+import 'screens/contact.dart';
 
 void main() => runApp(Portfolio());
 

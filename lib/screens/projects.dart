@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/components/sliver_bar.dart';
 import 'package:portfolio/components/sliver_card.dart';
-import 'project-page.dart';
 import 'package:portfolio/resources/projects_list.dart';
+
+import 'project-page.dart';
 
 class Projects extends StatelessWidget {
   @override

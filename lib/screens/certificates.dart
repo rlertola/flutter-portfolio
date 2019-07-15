@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/components/sliver_bar.dart';
-import 'cert-viewer.dart';
 import 'package:portfolio/components/sliver_card.dart';
 import 'package:portfolio/resources/certificates_list.dart';
+
+import 'cert-viewer.dart';
 
 class Certificates extends StatelessWidget {
   @override

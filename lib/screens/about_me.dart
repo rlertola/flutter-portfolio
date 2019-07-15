@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:portfolio/components/padding_text.dart';
 import 'package:portfolio/components/big_button.dart';
 import 'package:portfolio/resources/constants.dart';
 import 'package:portfolio/components/sliver_bar.dart';
-import 'package:url_launcher/url_launcher.dart';
+
 import 'cert-viewer.dart';
 import 'skills.dart';
 
