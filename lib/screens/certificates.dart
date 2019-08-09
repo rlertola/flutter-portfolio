@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/components/sliver_bar.dart';
-import 'package:portfolio/components/sliver_card.dart';
-import 'package:portfolio/resources/certificates_list.dart';
 
+import '../components/sliver_bar.dart';
+import '../components/sliver_card.dart';
+import '../resources/certificates_list.dart';
 import 'cert-viewer.dart';
 
 class Certificates extends StatelessWidget {

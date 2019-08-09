@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:portfolio/components/padding_text.dart';
-import 'package:portfolio/components/contact_card.dart';
-import 'package:portfolio/resources/constants.dart';
+
+import '../components/contact_card.dart';
+import '../components/padding_text.dart';
+import '../resources/constants.dart';
 
 class Contact extends StatelessWidget {
   // url_launcher function for phone and email.

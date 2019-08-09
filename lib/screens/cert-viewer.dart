@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:zoomable_image/zoomable_image.dart';
 
 class CertViewer extends StatelessWidget {
-  CertViewer({this.file, this.text});
-
   final String file;
   final String text;
+
+  CertViewer({@required this.file, @required this.text});
 
   @override
   Widget build(BuildContext context) {

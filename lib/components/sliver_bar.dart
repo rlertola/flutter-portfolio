@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 
 class SliverBar extends StatelessWidget {
-  SliverBar({this.titleText});
-
   final String titleText;
+  SliverBar({@required this.titleText});
 
   @override
   Widget build(BuildContext context) {

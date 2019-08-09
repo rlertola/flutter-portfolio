@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 class BigButton extends StatelessWidget {
-  BigButton({this.title, this.onPress});
-
   final String title;
   final Function onPress;
+
+  BigButton({@required this.title, @required this.onPress});
 
   @override
   Widget build(BuildContext context) {

@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:portfolio/components/big_button.dart';
-import 'package:portfolio/resources/projects_list.dart';
+
+import '../components/big_button.dart';
+import '../resources/projects_list.dart';
 
 class Project extends StatelessWidget {
-  Project({this.index});
   final int index;
 
-  // Launches
+  Project({@required this.index});
+
   void launchURL(url) async {
     if (await canLaunch(url)) {
       await launch(url);
@@ -18,9 +19,9 @@ class Project extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    List<String> images = projects[index]['image_urls'];
+    List<String> _images = projects[index]['image_urls'];
 
-    List<Padding> paddingWidgets = images.map((image) {
+    List<Padding> _paddingWidgets = _images.map((image) {
       return Padding(
         padding: EdgeInsets.all(8.0),
         child: Image.asset(image),
@@ -72,7 +73,7 @@ class Project extends StatelessWidget {
               ),
             ),
             Column(
-              children: paddingWidgets,
+              children: _paddingWidgets,
             ),
           ],
         ),

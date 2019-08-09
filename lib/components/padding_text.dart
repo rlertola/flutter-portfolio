@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
 
 class PaddingText extends StatelessWidget {
-  PaddingText(
-      {this.padding,
-      this.text,
-      this.size,
-      this.family,
-      this.color,
-      this.weight});
-
   final EdgeInsets padding;
   final String text;
   final double size;
   final String family;
   final Color color;
   final FontWeight weight;
+
+  PaddingText(
+      {@required this.padding,
+      @required this.text,
+      @required this.size,
+      @required this.family,
+      @required this.color,
+      this.weight});
 
   @override
   Widget build(BuildContext context) {
