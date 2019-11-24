@@ -56,3 +56,6 @@ class SliverCard extends StatelessWidget {
     );
   }
 }
+
+// Why do I have a column inside a column???
+// Try a ListTile and wrap the ListTileBar title part in a container???

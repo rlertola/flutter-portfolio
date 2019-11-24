@@ -54,7 +54,7 @@ class Project extends StatelessWidget {
               ),
             ),
             BigButton(
-              title: 'Live Demo',
+              title: (index != 0) ? 'Live Demo' : 'Get on Google Play',
               onPress: () {
                 launchURL(projects[index]['live_link']);
               },

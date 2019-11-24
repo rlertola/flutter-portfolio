@@ -1,13 +1,13 @@
 List certificates = [
   {
     'id': 0,
-    'title': 'Treehouse',
-    'image': 'assets/certificates/treehouse-cert.png'
+    'title': 'Flutter',
+    'image': 'assets/certificates/flutter-cert.png'
   },
   {
     'id': 1,
-    'title': 'Flutter',
-    'image': 'assets/certificates/flutter-cert.png'
+    'title': 'Treehouse',
+    'image': 'assets/certificates/treehouse-cert.png'
   },
   {
     'id': 2,

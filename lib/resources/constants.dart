@@ -1,7 +1,7 @@
 // Contact
 const kAvatar = 'assets/certificates/me.jpg';
-const kMainDescription = 'Fullstack Javascript and';
-const kSecondaryDescription = 'Flutter Developer';
+const kMainDescription = 'Flutter and Fullstack';
+const kSecondaryDescription = 'Javascript Developer';
 const kPhoneNumberText = '480-326-6124';
 const kPhoneNumberURL = 'tel:+14803266124';
 const kSMS = 'sms:4803266124';
@@ -12,4 +12,4 @@ const kEmailAddressURL = 'mailto:rlertola@gmail.com>?subject=Hey Ryan&body=';
 const kResume = 'assets/certificates/Resume-RyanLertola.png';
 const kGitHubUrl = 'https://github.com/rlertola?tab=repositories';
 const kAboutMeDescription =
-    'I am an aspiring Flutter and fullstack JavaScript developer who recently completed the TreeHouse Techdegree program with a primary focus on JavaScript, Node, React, Express and Mongo. \n\nI have also completed the App Brewery Flutter Development course. Please check out my projects and certificates.';
+    'I am a Flutter developer with full stack JavaScript experience. I recently completed the App Brewery Flutter and Firebase course, and the TreeHouse Techdegree program with a focus on JavaScript, Node, React, Express and Mongo. Please check out my projects and certificates.';
